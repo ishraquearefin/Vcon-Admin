@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>video conference</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="css/css.cssvendor" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/admin.css" rel="stylesheet">
+
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        
+          <img src="images/logo.png">
+        
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+          <img src="images/normal_shape_u23076.svg">
+          <span>Dashboard</span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+          <img src="images/Time.svg">
+          <span>Meeting Management</span></a>
+      </li>
+
+
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+          <img src="images/taskmenu-icon.png">
+          <span>Task Management</span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+          <img src="images/normal_u23109.svg">
+          <span>Chat</span></a>
+      </li>
+
+
+      <li class="nav-item active" style="margin-top: 3rem;">
+        <a class="nav-link" href="index.html">
+          <img src="images/normal_u23109.svg">
+          <span>Contact</span></a>
+      </li>
+
+
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+          <img src="images/normal_u23109.svg">
+          <span>Admin Tool</span></a>
+      </li>
+
+      
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+      	
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+          
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+
+             <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" style="color: #ff6464" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="images/flash.svg"> &nbsp; What's New
+              </a>
+            </li>
+
+			  
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" style="color: #0e6da2" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Quick Action
+              </a>
+            </li>
+			  
+			 <div class="topbar-divider d-none d-sm-block"></div>
+
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <img src="images/calendar.svg">
+              </a>
+            </li>
+
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="images/bell2.svg">
+              </a>
+            </li>
+
+             <div class="topbar-divider d-none d-sm-block"></div>
+            <!-- Nav Item - Messages -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <img src="images/settings3.svg">
+              </a>
+            </li>
+
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img class="img-profile rounded-circle" src="images/tushar.jpg">
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Profile
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Settings
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+        	<!--Meeting Modal-->
+			<div class="whole">
+      				<div class="row startMeeting" >
+							<div class="col-md-4">
+							</div>	
+								<div class="col-md-8">
+									 <div class="meetingModal" id="showdiv">
+					    				<h1>You look in the meeting</h1>
+
+                                        <div class="float-right"><img src="images/settingsarrow.png"class="slide-toggle" id="settingimg"></div>
+					    				<div class="row vbottom">
+				    					<div class="col-md-5"></div>
+				    					<div class="col-md-2" id="meetingModalclose" style=" cursor:pointer">Close</div>
+				    					<div class="col-md-5"></div>
+
+				    				</div>
+					    			</div>	
+					    		</div>
+				    </div>
+				    <div class="row slideMeeting" >
+							<div class="col-md-6">
+								
+							</div>	
+							<div class="col-md-6">
+								<div class="meetingModal">
+									<h1>Meeting Settings</h1>
+								</div>
+							</div>
+				    </div>
+			</div>
+				    <!--id="hidediv"-->
+
+				    <div class="row hostMeeting">
+							<div class="col-md-4"></div>
+							<div class="col-md-8">
+								 <div class="pmiModal">
+                                     <div class="container">
+										  <div class="row">
+										    <div class="col-md-4">
+										      Covey Host Meeting
+										    </div>
+										    <div class="col-md-6">
+										 
+										    </div>
+										    <div class="col-md-2 " id="hostMeetingclose" style="float: right; cursor:pointer">
+										      Close
+										    </div>
+										  </div>
+										</div>
+				    			 </div>	
+				    			 
+				    		</div>
+				    </div>
+				    <div class="row sendInvitation">
+							<div class="col-md-4"></div>
+							<div class="col-md-8">
+								 <div class="invitationModal">
+				    				<h1>Send Invitation</h1>
+				    				<div class="row vbottom">
+				    					<div class="col-md-5"></div>
+				    					<div class="col-md-2" id="close" style=" cursor:pointer">Close</div>
+				    					<div class="col-md-5"></div>
+
+				    				</div>
+				    			</div>	
+				    			 
+				    		</div>
+				    </div>
+
+				    <!--Modal Ends-->
+          <div class="row">
+           <div class="col-md-8">
+            <div class="container">
+              <div class="col-md-12">
+
+              	<h1 class="colorHead"><b>Today's Overview</b></h1>
+              </div>
+			 		
+    
+				<div class="table-responsive col-md-12">
+				  <table class="table">
+					
+						<tbody>
+						  <tr class="shadowOne">
+							<td class="borderRigthTD">
+								<div class="col-md-4 leftRoundborder">
+									<span>2</span> Meeting Invition
+								</div>	
+							</td>
+							<td class="borderRigthTD">
+								<div class="col-md-4 middleborder">
+									<span>1</span> Registration Request
+								</div>	  
+							</td>
+							<td class="accordion-toggle collapsed" id="accordion1" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">
+								<div class="col-md-4 middleborder showArrow">
+									Show all issues &nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i> 
+								</div> 
+							</td>
+						 </tr>
+						 <tr>
+						 	<td colspan="3">
+							 	<div class="col-md-12 shadowTwo"></div>
+                				<div class="col-md-12 shadowThree"></div>
+							 </td>
+						 </tr>	
+						<tr class="hide-table-padding">
+							<td colspan="3">
+								<div id="collapseOne" class="collapse in p-3">
+									<div class=col-md-12>
+									  <div class="row shadowOne leftRoundborderCollapDiv">
+										<div class="col-md-5 collapsOnetext">
+											Sifat sent a meeting invitation to you
+											<p>
+												<span>Design dashboard discussion</span><br/>
+
+												Thu, Sep 27, 2020 at 9:00 am - 10:00 am
+											</p>
+										 </div>
+										<div class="col-md-2 accept"><a href="#">Accept</a></div>
+										<div class="col-md-3 timing"><a href="#">Suggest a Time</a></div>
+										<div class="col-md-2 decline"><a href="#">Decline</a></div>
+									  </div>
+									</div>		
+								 </div>
+							</td>
+						</tr>
+
+						<tr class="hide-table-padding">
+							<td colspan="3">
+								<div id="collapseOne" class="collapse in p-3">
+									<div class=col-md-12>
+									  <div class="row shadowOne leftRoundborderCollapDiv">
+										<div class="col-md-5 collapsOnetext">
+											Sifat sent a meeting invitation to you
+											<p>
+												<span>Review session on payment workflow</span><br/>
+
+												Thu, Sep 27, 2020 at 9:00 am - 10:00 am
+											</p>
+										 </div>
+										<div class="col-md-2 accept"><a href="#">Accept</a></div>
+										<div class="col-md-3 timing"><a href="#">Suggest a Time</a></div>
+										<div class="col-md-2 decline"><a href="#">Decline</a></div>
+									  </div>
+									</div>		
+								 </div>
+							</td>
+						</tr>
+						
+						<tr class="hide-table-padding">
+							<td colspan="3">
+								<div id="collapseOne" class="collapse in p-3">
+									<div class=col-md-12>
+									  <div class="row shadowOne leftRoundborderCollapDiv">
+										<div class="col-md-5 collapsOnetext">
+											Sifat sent a meeting invitation to you
+											<p>
+												<span>Review session on payment workflow</span><br/>
+
+												Thu, Sep 27, 2020 at 9:00 am - 10:00 am
+											</p>
+										 </div>
+										<div class="col-md-2 accept"><a href="#">Accept</a></div>
+										<div class="col-md-3 timing"><a href="#">Suggest a Time</a></div>
+										<div class="col-md-2 decline"><a href="#">Decline</a></div>
+									  </div>
+									</div>		
+								 </div>
+							</td>
+						</tr>	
+						
+						<tr><td colspan="3"></td></tr>
+						<tr><td colspan="3"></td></tr>
+						<tr><td colspan="3"></td></tr>	
+					
+						 <tr class="shadowOne">
+							<td class="borderRigthTD">
+								<div class="col-md-4 leftRoundborderSec">
+									<span>5</span> Ongoing Tasks
+								</div>	
+							</td>
+							<td class="borderRigthTD">
+								<div class="col-md-4 middleborder">
+									<span>2</span> New Tasks
+								</div>	  
+							</td>
+							<td class="accordion-toggle collapsed" id="accordion2" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+								<div class="col-md-4 middleborder showArrow">
+									Show all tasks &nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i> 
+								</div> 
+							</td>
+						 </tr>	
+						 <tr>
+						 	<td colspan="3">
+							 	<div class="col-md-12 shadowTwo"></div>
+                				<div class="col-md-12 shadowThree"></div>
+							 </td>
+						 </tr>	
+
+						<tr class="hide-table-padding">
+							<td colspan="3">
+								<div id="collapseTwo" class="collapse in p-3">
+									<div class=col-md-12>
+									  <div class="row shadowOne leftRoundborderCollapDivSEC">
+										<div class="col-md-5 collapsOnetext">
+											<p>
+												<span>Design Dashboard</span><br/>
+
+												Thu, Sep 27, 2020 at 9:00 am - 10:00 am
+											</p>
+										 </div>
+										<div class="col-md-3 taskAssing">Status- Assigned</div>
+										<div class="col-md-1 taskAssing"><img src="images/notification.png"></div>
+										<div class="col-md-3 taskAssing gottodetails">Go to details <img src="images/down-arrowSS.svg"><img src="images/menuhuS.svg" class="float-right"></div>
+									  </div>
+									</div>		
+								</div>
+							</td>
+						</tr>
+						
+						<tr class="hide-table-padding">
+							<td colspan="3">
+								<div id="collapseTwo" class="collapse in p-3">
+									<div class=col-md-12>
+									  <div class="row shadowOne leftRoundborderCollapDivSEC">
+										<div class="col-md-5 collapsOnetext">
+											<p>
+												<span>Design Dashboard</span><br/>
+
+												Thu, Sep 27, 2020 at 9:00 am - 10:00 am
+											</p>
+										 </div>
+										<div class="col-md-3 taskAssing">Status- Assigned</div>
+										<div class="col-md-1 taskAssing"><img src="images/notification.png"></div>
+										<div class="col-md-3 taskAssing gottodetails">Go to details<img src="images/down-arrowSS.svg"><img src="images/menuhuS.svg" class="float-right"></div>
+									  </div>
+									</div>		
+								</div>
+							</td>
+						</tr>
+							
+						<tr class="hide-table-padding">
+							<td colspan="3">
+								<div id="collapseTwo" class="collapse in p-3">
+									<div class=col-md-12>
+									  <div class="row shadowOne leftRoundborderCollapDivSEC">
+										<div class="col-md-5 collapsOnetext">
+											<p>
+												<span>Design Dashboard</span><br/>
+
+												Thu, Sep 27, 2020 at 9:00 am - 10:00 am
+											</p>
+										 </div>
+										<div class="col-md-3 taskAssing">Status- Assigned</div>
+										<div class="col-md-1 taskAssing"><img src="images/notification.png"></div>
+										<div class="col-md-3 taskAssing gottodetails">Go to details<img src="images/down-arrowSS.svg"><img src="images/menuhuS.svg" class="float-right"></div>
+									  </div>
+									</div>		
+								</div>
+							</td>
+						</tr>
+							
+						<tr class="hide-table-padding">
+							<td colspan="3">
+								<div id="collapseTwo" class="collapse in p-3">
+									<div class=col-md-12>
+									  <div class="row shadowOne leftRoundborderCollapDivSEC">
+										<div class="col-md-5 collapsOnetext">
+											<p>
+												<span>Design Dashboard</span><br/>
+
+												Thu, Sep 27, 2020 at 9:00 am - 10:00 am
+											</p>
+										 </div>
+										<div class="col-md-3 taskAssing">Status- Assigned</div>
+										<div class="col-md-1 taskAssing"><img src="images/notification.png"></div>
+										<div class="col-md-3 taskAssing gottodetails">Go to details<img src="images/down-arrowSS.svg"><img src="images/menuhuS.svg" class="float-right"></div>
+									  </div>
+									</div>		
+								</div>
+							</td>
+						</tr>
+							
+						
+						<tr><td colspan="3"></td></tr>
+						<tr><td colspan="3"></td></tr>
+						<tr><td colspan="3"></td></tr>		
+						
+						<tr class="shadowOne">
+							<td class="borderRigthTD">
+								<div class="col-md-4 leftRoundborderThired">
+									<span>5</span> Informative
+								</div>	
+							</td>
+							<td class="borderRigthTD">
+								<div class="col-md-4 "></div>	  
+							</td>
+							<td class="accordion-toggle collapsed" id="accordion3" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree">
+								<div class="col-md-4 middleborder showArrow">
+									Show all &nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i> 
+								</div> 
+							</td>
+						 </tr>
+						  <tr>
+						 	<td colspan="3">
+							 	<div class="col-md-12 shadowTwo"></div>
+                				<div class="col-md-12 shadowThree"></div>
+							 </td>
+						 </tr>		
+						
+						<tr class="hide-table-padding">
+							<td colspan="3">
+								<div id="collapseThree" class="collapse in p-3">
+									<div class=col-md-12>
+									  <div class="row shadowOne leftRoundborderThired">
+										<div class="col-md-8 noTop">
+											Upgrade to Business Pro-Annually to save 30%
+										 </div>
+										<div class="col-md-4 upgade">Upgade  |  Dismiss</div>
+									  </div>
+									</div>		
+								</div>
+							</td>
+						</tr>	
+							
+						<tr class="hide-table-padding">
+							<td colspan="3">
+								<div id="collapseThree" class="collapse in p-3">
+									<div class=col-md-12>
+									  <div class="row shadowOne leftRoundborderThired">
+										<div class="col-md-9 noTop">
+											Upgrade to Business Pro-Annually to save 30%
+										 </div>
+										<div class="col-md-3 upgade">Upgade  |  Dismiss</div>
+									  </div>
+									</div>		
+								</div>
+							</td>
+						</tr>		
+							
+					</tbody>
+				  </table>
+				</div>
+
+		
+
+
+
+             
+            </div>
+
+			<div class="container topMargin">
+				<div class="col-md-12">
+				 
+				 <h1 class="colorHead"><b>Convey Host</b></h1>
+				</div>
+
+				<div class="col-md-12 topMargin">  
+					<div class="col-md-12 shadowMeetingBox">  
+					
+
+						
+						<div class="row">
+							<div class="col-md-12 conveyHostIcon">
+								<p>Personal Meeting ID -<br/>
+									223 456 2919</p>
+								
+								<ul class="float-left">
+									<li class="hostClander"></li>
+									<div class="hide"><img src="images/calendarSSWhite.svg"> &nbsp; Schedule Meeting</div>
+									<li class="hosInvitaion"></li>
+									<div class="hideTwo"><img src="images/paper-planeWhite.svg"> &nbsp; Send Invitation</div>
+									<li class="hosCopyInvitaion"></li>
+									<div class="hideThree"><img src="images/copyWhite.svg"> &nbsp; Copy Invitation</div>
+									<li class="hosPMISetting"></li>
+									<div class="hideFour"><img src="images/settingsSSWhite.svg"> &nbsp;PMI Settings</div>
+								</ul>
+								
+								<div class="playDiv float-right"></div>
+								<div class="hideStartMeeting"><img src="images/playSSWhite.svg"> &nbsp;Stary Meeting</div>
+
+							</div>
+							
+						</div>
+						 
+
+						 
+					</div>
+                     <!--Copy Invitation-->
+					  <div class="row copyInvitation">
+								<div class="col-md-4">
+									<div class="copyModal">
+				    				<h1>Copy Invitation</h1>
+				    				<img src="images/cross.svg" id="cross" class="vbottom" style="float:right;">
+				    			</div>	
+								</div>
+								<div class="col-md-8"></div>
+				   		 </div>
+					
+						<!--Copy Invitation-->
+				   			
+					
+				</div>
+             </div>
+			   
+			   
+			 <div class="container topMargin">
+				<div class="col-md-12">
+				 <h1 class="colorHead"><b>Convay's Room</b></h1>
+				</div>
+
+				<div class="col-md-12 topMargin">  
+					<div class="col-md-12 shadowMeetingBox">  
+						<div class="row">
+							<div class="col-md-12 conveyHostIcon">
+								<p>3 Small, 2 medium -<br/>
+									& 1 big rooms</p>
+								
+								<ul class="float-left">
+									<li class="roomUser"></li>
+									<div class="hideroomUser"><img src="images/Group 321White.svg"> &nbsp; Room Usage</div>
+									<li class="roomFind"></li>
+									<div class="hideroomFind"><img src="images/search2White.svg"> &nbsp; Find Room</div>
+									<li class="roomSetting"></li>
+									<div class="hideroomSetting"><img src="images/search2White.svg"> &nbsp; Room Settings</div>
+								</ul>
+								
+								<div class="bookingDiv float-right"></div>
+								<div class="hideBookingDiv"><img src="images/calendarSSWhite.svg"> &nbsp;Start Booking</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+             </div>   
+			   
+			   
+			   
+			<div class="col-md-12 topMargin">
+			  <div class="col-md-12">
+				 <div class="col-md-12"> 
+				 <div class="row"> 
+					 <div class="col-md-6">
+						 <h1 class="colorHead"><b> 5 Available Meeting Spaces</b></h1>
+					</div>
+				  	<div class="col-md-6">
+						<div class="showAllBtn col-md-4 float-right">Show All</div>
+					</div> 
+				</div>	
+				</div>	 
+				  <div class="col-md-12"> 
+					<div class="row rowheight">
+						<div class="col-md-6">
+							<div class="col-md-12 shadowMeetingBox">
+								<div class="row">
+									<div class="col-md-2 boxMin">for 30 mins</div>
+									<div class="col-md-9 boxMinTwo">
+										Small Room - 1
+										<br/>
+										Capacity- 25 people
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<img src="images/clock3.png">&nbsp;Available Till 9.30 am
+									</div>
+								</div>
+								<div class="row clockTime">
+									<div class="col-md-12" style="text-align: center; line-height: 30px;"><img src="images/playSSWhite.svg">&nbsp;Start Meeting </div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="col-md-12 shadowMeetingBox">
+								<div class="row">
+									<div class="col-md-2 boxMin">for 30 mins</div>
+									<div class="col-md-9 boxMinTwo">
+										Small Room - 1
+										<br/>
+										Capacity- 25 people
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<img src="images/clock3.png">&nbsp;Available Till 9.30 am
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 clockTimeTwo" style="text-align: center; line-height: 30px;">
+										<img src="images/playSSWhite.svg">&nbsp;Start 
+									</div>
+									<div class="col-md-6 clockTimeThree" style="text-align: center; line-height: 30px;">
+										<img src="images/calendarTwo.svg">&nbsp;svgBook
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						
+					
+						
+					</div>
+				  </div>
+			  </div>
+		  </div>
+
+				  <!--Meeting Modal-->
+				 
+			   
+         </div>
+		<!---end left----->	  
+			  
+           <div class="col-md-4">
+             <div class="col-md-12">
+               <h1 class="colorHead"><b>Upcoming Meeting</b></h1>
+             </div>
+             
+            
+              <div class="col-md-12 shadowOneLeft">
+				
+                 <div class="row">
+                  <div class="col-md-12 rigthTableBox">
+                  
+
+					  
+					<table class="table-responsive-lg rigthTableText" width="100%">
+						<tr>
+							<td>9:00 am -9:30 am</td> 
+							<td></td> 
+						</tr>
+						<tr>
+							<td>Dashboard Discussion</td> 
+							<td class="jointRight"><img src="images/join.png"> &nbsp; <img src="images/dot.png" id ="click"></td> 
+
+							
+
+						</tr>
+						<tr>
+						<td>Amy Swirnoe (Host)</td>
+
+						 
+						</tr> 
+						<tr>
+						<td>ID - xxx xxx xxx xxx</td> 
+						<td></td> 
+						</tr>
+						<tr>
+							<td>Participants- 5</td> 
+							<td class="jointRight showParti"><a href="#">Show All Participants</a></td> 
+						</tr>
+					</table>
+
+                </div>
+               </div>
+            	<div class="col-md-12 shadowTwo"></div>
+                <div class="col-md-12 shadowThree"></div>
+                <div class="row ">
+                	<div class="col-md-4"></div>
+                	<div class="col-md-4"></div>
+                	<div class="col-md-4 arrow_box">Arefin</div>
+                </div>
+               
+			   
+			   
+			   <div class="col-md-12">
+                <div class="totalbox">
+                  <a href="#">Total 5 Meeying <img src="images/down-arrowSS.svg"><img src="images/down-arrowSS.svg"></a>
+                </div>
+              </div>
+
+              <div class="col-md-12" style="margin-top: 50px;">
+                
+                  <h1 class="colorHead"><b>Join a Meeting</b></h1>  
+              </div>
+			
+			   <div class="col-md-12 shadowMeetingConveyBox" style="min-height: 135px;"> 
+					<div class="joinDiv float-right"></div>
+				</div>
+              
+           </div>
+        </div>
+			
+			
+        </div>
+        <!-- /.container-fluid -->
+        
+      
+
+      </div>
+      <!-- End of Main Content -->
+		<br/><br/><br/><br/>
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Your Website 2020</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	
+	
+
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+  <script>
+
+  	//Start Meeting Jquery work starts
+  	$(document).ready(function(){
+      
+        $(".hideStartMeeting").click(function(){
+        	$(".meetingModal").show();
+        	$(".pmiModal").hide();
+        	$(".invitationModal").hide();
+        	$('.copyModal').hide();
+        	$('.meetingModal').css('box-shadow', '0 0 0 99999px rgba(128, 148, 148, .9)');
+
+            
+           
+        });
+        $("#meetingModalclose").on('click', function(){
+    		$('.meetingModal').hide();
+		});
+		//Start Meeting Jquery work end
+		
+
+		//Covey Host Meeting Jquery work starts
+		$(".hideFour").click(function(){
+        	$(".pmiModal").show();
+        	$(".meetingModal").hide();
+        	$(".invitationModal").hide();
+        	$('.copyModal').hide();
+			$('.pmiModal').css('box-shadow', '0 0 0 99999px rgba(128, 148, 148, .9)');
+            
+            
+           
+        });
+        $("#hostMeetingclose").on('click', function(){
+    		$('.pmiModal').hide();
+		});
+		
+		//Covey Host Meeting Ends
+
+
+		//Send Invitation jquery Work
+		$(".hideTwo").click(function(){
+        	$(".invitationModal").show();
+        	$(".pmiModal").hide();
+        	$(".meetingModal").hide();
+        	$('.copyModal').hide();
+			$('.invitationModal').css('box-shadow', '0 0 0 99999px rgba(128, 148, 148, .9)');
+            
+           
+        });
+        $("#close").on('click', function(){
+    		$('.invitationModal').hide();
+		});
+		
+		//Send Invitation jquery Work End
+
+        //Copy Work starts here
+		$(".hideThree").click(function(){
+        	$(".copyModal").show();
+        	$(".invitationModal").hide();
+        	$(".pmiModal").hide();
+        	$(".meetingModal").hide();
+
+            
+           
+        });
+        $("#cross").on('click', function(){
+    		$('.copyModal').hide();
+		});
+		
+		//Copy Invitation jquery work ends
+
+
+          $("#click").click(function(){
+            if($(".arrow_box").is(":visible")){
+                $(".arrow_box").slideUp("slow",function(){
+                	$(this).hide();
+
+                });
+            }
+            else {
+                $(".arrow_box").slideDown("slow",function(){
+                	$(this).show();
+                	
+        	
+            
+                });
+                
+            }
+            
+        });
+                  	$(".slideMeeting").hide();
+                 
+             	  $("#settingimg").click(function(){
+
+
+             	  	if($(".slideMeeting").is(":visible")){
+
+						$('#showdiv').css('box-shadow', '0 0 0 99999px rgba(128, 148, 148, .9)');
+                     	$(".slideMeeting").hide();
+                     	$('.startMeeting').animate({"margin-right": '-=1330'});
+
+						//$("#showdiv").animate({'left': '0'}, 100);
+            			}
+           		 else {
+           		 	   // $(".slideMeeting").css({'margin-left':'800px'})
+
+
+           		 	     $(".slideMeeting").show(200)
+                     	 $('.startMeeting').animate({"margin-right": '+=1330'});
+						 $('#showdiv').css('box-shadow', 'none');
+
+
+
+						//$("#showdiv").animate({'left': '200'}, 100);  
+              
+            			}
+             	  
+					
+           
+        });
+             	 
+   				 
+   				  
+   			
+   				
+
+                 
+  			
+		
+       
+
+  	});
+  </script>
+
+  
+
+	
+	
+
+</body>
+
+</html>
