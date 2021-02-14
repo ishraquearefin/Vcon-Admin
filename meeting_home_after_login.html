@@ -218,12 +218,12 @@
 					    			</div>	
 					    		</div>
 				    </div>
-				    <div class="row slideMeeting" >
+				    <div class="row" >
 							<div class="col-md-6">
 								
 							</div>	
 							<div class="col-md-6">
-								<div class="meetingModal">
+								<div class="slideMeeting">
 									<h1>Meeting Settings</h1>
 								</div>
 							</div>
@@ -855,6 +855,7 @@
         	$(".pmiModal").hide();
         	$(".invitationModal").hide();
         	$('.copyModal').hide();
+
         	$('.meetingModal').css('box-shadow', '0 0 0 99999px rgba(128, 148, 148, .9)');
 
             
@@ -862,6 +863,7 @@
         });
         $("#meetingModalclose").on('click', function(){
     		$('.meetingModal').hide();
+
 		});
 		//Start Meeting Jquery work end
 		
@@ -944,7 +946,7 @@
 
 						$('#showdiv').css('box-shadow', '0 0 0 99999px rgba(128, 148, 148, .9)');
                      	$(".slideMeeting").hide();
-                     	$('.startMeeting').animate({"margin-right": '-=1330'});
+                     	$('.startMeeting').animate({"margin-right": '-=850'});
 
 						//$("#showdiv").animate({'left': '0'}, 100);
             			}
@@ -953,8 +955,9 @@
 
 
            		 	     $(".slideMeeting").show(200)
-                     	 $('.startMeeting').animate({"margin-right": '+=1330'});
-						 $('#showdiv').css('box-shadow', 'none');
+                     	 $('.startMeeting').animate({"margin-right": '+=850'});
+						$('.meetingModal').css('box-shadow', '0 0 0 1600px rgba(128, 148, 148, .9)');
+
 
 
 

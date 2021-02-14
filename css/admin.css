@@ -12112,6 +12112,28 @@ cursor: pointer;
   cursor:pointer;
 }
 
+#showdiv{
+  overflow:hidden;
+}
+.slideMeeting{
+  display:none;
+  border-width: 0px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 550px;
+  height: 500px;
+  background: inherit;
+  background-color:#FFFAFF;
+  border-top:2px solid #2D66EA;
+  border-left:0.5px solid #CFD2D9;
+  border-bottom:0.5px solid #CFD2D9;
+  border-right:0.5px solid #CFD2D9;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  z-index: 2;
+}
 
 
 
